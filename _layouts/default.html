@@ -1,0 +1,79 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>{{ page.title }}</title>
+
+    <!-- CSS  -->
+    <link href="{{ site.url }}/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ site.url }}/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{ site.url }}/css/anime.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  </head>
+  <body>
+    <div class = "container">
+      <div class = "mar20 brand-logo center"
+        <a style = "cursor:pointer;"href = "#!"><img src='{{site.url}}/images/logo_1.jpg'>
+      </div>
+
+        <nav style = "background-color:#ee6e73;" >
+          <ul class = blue-text text-darken-4>
+            <li><a class = "bold white-text" href = "home.html">Home</a></li>
+            <li><a  class = "white-text" href = "">3d printers</a></li>
+            <li><a   class = "white-text" href = "">3d materials</a></li>
+            <li><a  class = "white-text"  href = "">Services</a></li>
+            <li><a   class = "white-text" href = "services.html">Support</a></li>
+            <li><a   class = "white-text" href = "">Company</a></li>
+            <li><a  class = "white-text"  href = "estimate.html">Blog</a></li>
+            <li><a  class = "white-text"  href = "contact.html">Contact Us</a></li>
+
+          </ul>
+        </nav>
+        {{content}}
+    </div>
+
+
+    <footer style = "width:100%;background-color:#ee6e73" class="white-text page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <p>You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class = "white-text" href="#!">Home</a></li>
+              <li><a class = "white-text"  href="#!">3D Printers</a></li>
+              <li><a class = "white-text"   href="#!">3D Materials</a></li>
+              <li><a class = "white-text"   href="#!">Services</a></li>
+               <li><a class = "white-text"   href="#!">Support</a></li> 
+               <li><a class = "white-text"   href="#!">Company</a></li> 
+               <li><a class = "white-text"   href="#!">Blog</a></li> 
+              <li><a class = "white-text"   href="#!">Contact Us</a></li> 
+
+             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2015 Copyright 3digiprints
+        </div>
+      </div>
+    </footer> 
+    <scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{{ site.url }}js/materialize.js"></script>
+    <script src="{{ site.url }}js/init.js"></script>
+    <script src="{{ site.url }}js/main.js"></script>
+
+    <script type = "text/javascript">
+
+$(document).ready(function(){
+  $('.slider').slider({full_width: true});
+  $('select').material_select();
+});
+    </script>
+  </body>
+</html>
+
